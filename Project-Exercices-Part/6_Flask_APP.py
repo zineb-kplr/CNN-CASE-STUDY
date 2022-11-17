@@ -23,13 +23,8 @@ with open('dictionnaire.txt') as f:
 d = ast.literal_eval(data)
 
 def predict_label(img_path):
-        i = image.load_img(img_path, target_size=(240,240))
-        i = image.img_to_array(i)/255.0
-        i = i.reshape(1, 240,240,3)
-        p = model.predict(i)
-        in_max=np.where(p[0]==np.max(p))
-        return d[in_max[0][0]]
-
+       #TODO
+       #FILL_HERE THE PREDICT LABEL FUNCTION
 # routes
 @app.route("/", methods=['GET', 'POST'])
 def main():
