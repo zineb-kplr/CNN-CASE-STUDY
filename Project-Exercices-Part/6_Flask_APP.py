@@ -21,7 +21,7 @@ with open('dictionnaire.txt') as f:
     data = f.read()
 # reconstructing the data as a dictionary
 d = ast.literal_eval(data)
-
+#TODO
 def predict_label(img_path):
        #TODO
        #FILL_HERE THE PREDICT LABEL FUNCTION
