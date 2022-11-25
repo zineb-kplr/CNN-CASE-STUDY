@@ -29,7 +29,7 @@ python3 -m pip install PILLOW
 ```
 - go to DL-CarClassificationWithFlask
 ```
-cd DL-CarClassificationWithFlask
+cd CNN-CASE-STUDY
 ```
 - Create a dirrectory called static 
 ```
@@ -37,7 +37,7 @@ mkdir static
 ```
 - copy your saved model from local to ec2 instance (open a new terminal)
 ```
- scp -i "training.pem" model.h5 ec2-user@ec2-3-90-21-179.compute-1.amazonaws.com:/home/ec2-user/DL-CarClassificationWithFlask
+ scp -i "training.pem" model.h5 ec2-user@ec2-3-90-21-179.compute-1.amazonaws.com:/home/ec2-user/CNN-CASE-STUDY
 ```
 
 - Add the flaskapp.py that you have created :
